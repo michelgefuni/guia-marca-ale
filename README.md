@@ -3,7 +3,8 @@ Guia de Marca ALE
 
 ### Como iniciar
 
-```sass --watch scss/main.scss css/style.css
+```
+sass --watch scss/main.scss css/style.css
 ```
 
 ### Estrutura de pasta

@@ -1,0 +1,370 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Neo Sans Pro";
+  src: url("../assets/fonts/neosanspro/NeoSansPro-BoldItalic.woff2") format("woff2"), url("../assets/fonts/neosanspro/NeoSansPro-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neo Sans Pro";
+  src: url("../assets/fonts/neosanspro/NeoSansPro-Italic.woff2") format("woff2"), url("../assets/fonts/neosanspro/NeoSansPro-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neo Sans Pro";
+  src: url("../assets/fonts/neosanspro/NeoSansPro-Bold.woff2") format("woff2"), url("../assets/fonts/neosanspro/NeoSansPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neo Sans Pro";
+  src: url("../assets/fonts/neosanspro/NeoSansPro-Light.woff2") format("woff2"), url("../assets/fonts/neosanspro/NeoSansPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neo Sans Pro";
+  src: url("../assets/fonts/neosanspro/NeoSansPro-LightItalic.woff2") format("woff2"), url("../assets/fonts/neosanspro/NeoSansPro-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neo Sans Pro";
+  src: url("../assets/fonts/neosanspro/NeoSansPro-Medium.woff2") format("woff2"), url("../assets/fonts/neosanspro/NeoSansPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neo Sans Pro";
+  src: url("../assets/fonts/neosanspro/NeoSansPro-Regular.woff2") format("woff2"), url("../assets/fonts/neosanspro/NeoSansPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Interstate";
+  src: url("../assets/fonts/interstate/Interstate-Italic.woff2") format("woff2"), url("../assets/fonts/interstate/Interstate-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Interstate";
+  src: url("../assets/fonts/interstate/Interstate-Bold.woff2") format("woff2"), url("../assets/fonts/interstate/Interstate-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Interstate";
+  src: url("../assets/fonts/interstate/Interstate-Light.woff2") format("woff2"), url("../assets/fonts/interstate/Interstate-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Interstate";
+  src: url("../assets/fonts/interstate/Interstate-BoldItalic.woff2") format("woff2"), url("../assets/fonts/interstate/Interstate-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Interstate";
+  src: url("../assets/fonts/interstate/Interstate-Regular.woff2") format("woff2"), url("../assets/fonts/interstate/Interstate-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Interstate";
+  src: url("../assets/fonts/interstate/Interstate-LightItalic.woff2") format("woff2"), url("../assets/fonts/interstate/Interstate-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+.main-navigation {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.main-navigation nav {
+  background-color: #00539f;
+  padding: 20px 60px 26px 70px;
+  border-bottom-left-radius: 60px;
+}
+.main-navigation a {
+  display: inline-block;
+  text-decoration: none;
+}
+.main-navigation a:last-of-type {
+  margin-left: 24px;
+}
+.main-navigation svg {
+  width: 50px;
+  height: 50px;
+  fill: #fff;
+}
+
+[data-page=home] section {
+  min-height: 100vh;
+}
+[data-page=home] .container {
+  max-width: 1800px;
+  margin: auto;
+  padding: 0 40px;
+}
+[data-page=home] .main {
+  display: flex;
+  background-image: url("../assets/images/bg-home.jpg");
+  background-position: center bottom;
+  background-size: cover;
+}
+[data-page=home] .main .container {
+  display: flex;
+  align-items: end;
+  justify-content: flex-start;
+  min-height: inherit;
+  width: 100%;
+}
+[data-page=home] .main-title {
+  width: 100%;
+  max-width: 650px;
+  margin-bottom: 50px;
+  padding: 40px 70px;
+  position: relative;
+  color: #fff;
+}
+[data-page=home] .main-title h1, [data-page=home] .main-title p {
+  position: relative;
+  z-index: 1;
+}
+[data-page=home] .main-title h1 {
+  font-size: 140px;
+  font-weight: 700;
+  font-family: "Neo Sans Pro";
+}
+[data-page=home] .main-title p {
+  margin-top: 20px;
+  font-size: 40px;
+  line-height: 1.3;
+  font-family: "Interstate";
+}
+[data-page=home] .main-title::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #00539f;
+  mix-blend-mode: multiply;
+  border-top-right-radius: 300px;
+  z-index: 0;
+}
+[data-page=home] .all-pages {
+  display: flex;
+  flex-wrap: wrap;
+}
+[data-page=home] .all-pages > div {
+  width: 33.3333%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+[data-page=home] .all-pages > div:nth-child(even) {
+  background-color: #00539f;
+}
+[data-page=home] .all-pages > div:nth-child(even) > span {
+  color: #fff;
+}
+[data-page=home] .all-pages > div.corner-top-blue::before, [data-page=home] .all-pages > div.corner-top-white::before, [data-page=home] .all-pages > div.corner-bottom-white::before {
+  content: "";
+  width: 160px;
+  height: 150px;
+  position: absolute;
+  border-radius: 20px 110px 0 0;
+  pointer-events: none;
+  z-index: 0;
+}
+[data-page=home] .all-pages > div.corner-top-blue::before, [data-page=home] .all-pages > div.corner-top-white::before {
+  top: 0;
+  right: 0;
+}
+[data-page=home] .all-pages > div.corner-top-blue::before {
+  box-shadow: #00539f 50px -40px 0;
+}
+[data-page=home] .all-pages > div.corner-top-white::before, [data-page=home] .all-pages > div.corner-bottom-white::before {
+  box-shadow: #fff 50px -40px 0;
+}
+[data-page=home] .all-pages > div.corner-bottom-white::before {
+  left: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+[data-page=home] .all-pages > div > span {
+  top: 30px;
+  left: 30px;
+  position: absolute;
+  font-size: 30px;
+  font-family: "Neo Sans Pro";
+  color: #ee3124;
+}
+[data-page=home] .all-pages > div img {
+  max-width: 90%;
+}
+[data-page=home] .all-pages .full-pallete {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+[data-page=home] .all-pages .full-pallete > div {
+  flex-grow: 1;
+}
+[data-page=home] .all-pages .full-pallete > div:nth-child(1) {
+  background-color: #ee3124;
+}
+[data-page=home] .all-pages .full-pallete > div:nth-child(2) {
+  background-color: #fff;
+}
+[data-page=home] .all-pages .full-pallete > div:nth-child(3) {
+  background-color: #adafb2;
+}
+[data-page=home] .all-pages .full-pallete > div:nth-child(4) {
+  background-color: #ffc422;
+}
+[data-page=home] .all-pages .full-pallete > div:nth-child(5) {
+  background-color: #f68933;
+}
+[data-page=home] .all-pages .full-pallete > div:nth-child(6) {
+  background-color: #766aac;
+}
+[data-page=home] .all-pages .full-pallete > div:nth-child(7) {
+  background-color: #007dc3;
+}
+[data-page=home] .all-pages .full-pallete > div:nth-child(8) {
+  background-color: #00b5cb;
+}
+[data-page=home] .all-pages .full-pallete > div:nth-child(9) {
+  background-color: #d5e04d;
+}
+[data-page=home] .all-pages .full-pallete > div:nth-child(10) {
+  background-color: #50b948;
+}
+[data-page=home] .all-pages .all-fonts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+[data-page=home] .all-pages .all-fonts .neo {
+  color: #00539f;
+  font-size: 90px;
+  font-weight: 700;
+  font-family: "Neo Sans Pro";
+}
+[data-page=home] .all-pages .all-fonts .inter {
+  color: #ee3124;
+  font-size: 50px;
+  font-family: "Interstate";
+  padding: 40px 0;
+  position: relative;
+}
+[data-page=home] .all-pages .all-fonts .inter::before, [data-page=home] .all-pages .all-fonts .inter::after {
+  content: "+";
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  font-size: 40px;
+}
+[data-page=home] .all-pages .all-fonts .inter::before {
+  top: 0;
+}
+[data-page=home] .all-pages .all-fonts .inter::after {
+  bottom: 0;
+  color: #adafb2;
+}
+[data-page=home] .all-pages .all-fonts .lato-arial {
+  color: #adafb2;
+  font-size: 30px;
+}
+[data-page=home] .all-pages .all-fonts .lato-arial > span:first-child {
+  font-family: "Lato";
+}
+[data-page=home] .all-pages .all-fonts .lato-arial > span:last-child {
+  font-family: "Arial";
+}
+
+/*# sourceMappingURL=style.css~.map */

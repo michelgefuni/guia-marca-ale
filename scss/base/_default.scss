@@ -37,3 +37,51 @@ img {
     font-weight: 700;
   }
 }
+
+.download {
+  padding: 30px 0;
+  background-color: $secondary_gray;
+
+  @media (max-width: 810px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  p {
+    color: $primary_white;
+    font-family: $font_neo;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $primary_dark_blue;
+    font-family: $font_neo;
+    font-size: 20px;
+
+    @media (max-width: 520px) {
+      line-height: 2;
+    }
+
+    @media (max-width: 460px) {
+      .noMobile { display: none; }
+    }
+
+    &:not(:last-of-type) { margin-right: 40px; }
+
+    svg {
+      width: 40px;
+      height: 40px;
+      fill: $primary_dark_blue;
+      margin-left: 15px;
+
+      @media (max-width: 520px) {
+        display: none;
+      }
+    }
+  }
+}

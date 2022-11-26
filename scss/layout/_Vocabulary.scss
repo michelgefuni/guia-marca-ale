@@ -28,6 +28,22 @@
       min-height: inherit;
       width: 100%;
       position: relative;
+    
+      .elements {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+  
+        > img {
+          max-width: 200px;
+          margin: 20px 0;
+
+          @media (max-width: 500px) {
+            max-width: 120px;
+          }
+        }
+      }
 
       > span {
         left: 40px;
@@ -37,6 +53,11 @@
         font-size: 30px;
         font-family: $font_neo;
         line-height: 1.3;
+
+        @media (max-width: 500px) {
+          font-size: 20px;
+          padding-right: 60px;
+        }
       }
     }
 
@@ -46,6 +67,124 @@
       display: flex;
       flex-direction: column;
       text-align: center;
+    }
+  }
+
+  .vocabulary_chart {
+    padding: 40px 0;
+
+   .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+
+      @media (max-width: 600px) {
+        flex-direction: column;
+        
+        &:nth-child(1) img { max-width: 50%; }
+      }
+        
+      &:nth-child(2) img {
+        max-width: 50%;
+
+        @media (max-width: 600px) {
+          margin-top: 40px;
+          max-width: 100%;
+        }
+      }
+    }
+   } 
+  }
+
+  .shapes-vision {
+    display: flex;
+    color: $primary_white;
+    line-height: 1.3;
+    font-family: $font_neo;
+
+    @media (max-width: 800px) {
+      flex-wrap: wrap;
+    }
+
+    > div {
+      width: 50%;
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+
+      @media (max-width: 800px) {
+        width: 100%;
+      }
+
+      &::before {
+        content: "";
+        width: 160px;
+        height: 150px;
+        top: 0;
+        right: 0;
+        position: absolute;
+        pointer-events: none;
+        border-radius: 20px 110px 0 0;
+        box-shadow: $primary_white 50px -40px 0;
+        z-index: 0;
+      }
+    }
+
+    .shapes { background-color: $primary_dark_blue; }
+    .vision { background-color: $secondary_red; }
+
+    .title {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+
+      span { font-size: 20px; }
+
+      strong {
+        font-size: 30px;
+        font-weight: 700;
+      }
+    }
+
+    p {
+      font-size: 20px;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    img { margin-top: 40px; }
+  }
+
+  .examples {
+    .container img { max-width: 33%; }
+
+    &-vocabulary {
+      .container img { max-width: 49%; }
+    }
+  }
+
+  .examples,
+  .examples-vocabulary {
+    padding: 0 0 40px;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: 800px) {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        img { max-width: 100%; }
+      }
     }
   }
 }

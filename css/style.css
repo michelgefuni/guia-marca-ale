@@ -92,6 +92,54 @@ img {
   font-weight: 700;
 }
 
+.download {
+  padding: 30px 0;
+  background-color: #adafb2;
+}
+@media (max-width: 810px) {
+  .download nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.download p {
+  color: #ffffff;
+  font-family: "Neo Sans Pro";
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.download a {
+  text-decoration: none;
+  color: #0054a4;
+  font-family: "Neo Sans Pro";
+  font-size: 20px;
+}
+@media (max-width: 520px) {
+  .download a {
+    line-height: 2;
+  }
+}
+@media (max-width: 460px) {
+  .download a .noMobile {
+    display: none;
+  }
+}
+.download a:not(:last-of-type) {
+  margin-right: 40px;
+}
+.download a svg {
+  width: 40px;
+  height: 40px;
+  fill: #0054a4;
+  margin-left: 15px;
+}
+@media (max-width: 520px) {
+  .download a svg {
+    display: none;
+  }
+}
+
 @font-face {
   font-family: "Neo Sans Pro";
   src: url("../assets/fonts/neosanspro/NeoSansPro-BoldItalic.woff2") format("woff2"), url("../assets/fonts/neosanspro/NeoSansPro-BoldItalic.woff") format("woff");
@@ -903,53 +951,6 @@ img {
     max-width: 100%;
   }
 }
-[data-page=logo] .download {
-  padding: 30px 0;
-  background-color: #adafb2;
-}
-@media (max-width: 810px) {
-  [data-page=logo] .download nav {
-    display: flex;
-    flex-direction: column;
-  }
-}
-[data-page=logo] .download p {
-  color: #ffffff;
-  font-family: "Neo Sans Pro";
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 40px;
-}
-[data-page=logo] .download a {
-  text-decoration: none;
-  color: #0054a4;
-  font-family: "Neo Sans Pro";
-  font-size: 20px;
-}
-@media (max-width: 520px) {
-  [data-page=logo] .download a {
-    line-height: 2;
-  }
-}
-@media (max-width: 460px) {
-  [data-page=logo] .download a .noMobile {
-    display: none;
-  }
-}
-[data-page=logo] .download a:not(:last-of-type) {
-  margin-right: 40px;
-}
-[data-page=logo] .download a svg {
-  width: 40px;
-  height: 40px;
-  fill: #0054a4;
-  margin-left: 15px;
-}
-@media (max-width: 520px) {
-  [data-page=logo] .download a svg {
-    display: none;
-  }
-}
 [data-page=logo] .not-todo {
   padding: 40px 0;
 }
@@ -1676,6 +1677,21 @@ img {
   width: 100%;
   position: relative;
 }
+[data-page=vocabulary] .main .container .elements {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+[data-page=vocabulary] .main .container .elements > img {
+  max-width: 200px;
+  margin: 20px 0;
+}
+@media (max-width: 500px) {
+  [data-page=vocabulary] .main .container .elements > img {
+    max-width: 120px;
+  }
+}
 [data-page=vocabulary] .main .container > span {
   left: 40px;
   bottom: 40px;
@@ -1685,12 +1701,136 @@ img {
   font-family: "Neo Sans Pro";
   line-height: 1.3;
 }
+@media (max-width: 500px) {
+  [data-page=vocabulary] .main .container > span {
+    font-size: 20px;
+    padding-right: 60px;
+  }
+}
 [data-page=vocabulary] .main-title {
   position: relative;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+[data-page=vocabulary] .vocabulary_chart {
+  padding: 40px 0;
+}
+[data-page=vocabulary] .vocabulary_chart .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+[data-page=vocabulary] .vocabulary_chart .container > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+@media (max-width: 600px) {
+  [data-page=vocabulary] .vocabulary_chart .container > div {
+    flex-direction: column;
+  }
+  [data-page=vocabulary] .vocabulary_chart .container > div:nth-child(1) img {
+    max-width: 50%;
+  }
+}
+[data-page=vocabulary] .vocabulary_chart .container > div:nth-child(2) img {
+  max-width: 50%;
+}
+@media (max-width: 600px) {
+  [data-page=vocabulary] .vocabulary_chart .container > div:nth-child(2) img {
+    margin-top: 40px;
+    max-width: 100%;
+  }
+}
+[data-page=vocabulary] .shapes-vision {
+  display: flex;
+  color: #ffffff;
+  line-height: 1.3;
+  font-family: "Neo Sans Pro";
+}
+@media (max-width: 800px) {
+  [data-page=vocabulary] .shapes-vision {
+    flex-wrap: wrap;
+  }
+}
+[data-page=vocabulary] .shapes-vision > div {
+  width: 50%;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 800px) {
+  [data-page=vocabulary] .shapes-vision > div {
+    width: 100%;
+  }
+}
+[data-page=vocabulary] .shapes-vision > div::before {
+  content: "";
+  width: 160px;
+  height: 150px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  pointer-events: none;
+  border-radius: 20px 110px 0 0;
+  box-shadow: #ffffff 50px -40px 0;
+  z-index: 0;
+}
+[data-page=vocabulary] .shapes-vision .shapes {
+  background-color: #0054a4;
+}
+[data-page=vocabulary] .shapes-vision .vision {
+  background-color: #ee3124;
+}
+[data-page=vocabulary] .shapes-vision .title {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+[data-page=vocabulary] .shapes-vision .title span {
+  font-size: 20px;
+}
+[data-page=vocabulary] .shapes-vision .title strong {
+  font-size: 30px;
+  font-weight: 700;
+}
+[data-page=vocabulary] .shapes-vision p {
+  font-size: 20px;
+}
+[data-page=vocabulary] .shapes-vision p:not(:last-child) {
+  margin-bottom: 20px;
+}
+[data-page=vocabulary] .shapes-vision img {
+  margin-top: 40px;
+}
+[data-page=vocabulary] .examples .container img {
+  max-width: 33%;
+}
+[data-page=vocabulary] .examples-vocabulary .container img {
+  max-width: 49%;
+}
+[data-page=vocabulary] .examples,
+[data-page=vocabulary] .examples-vocabulary {
+  padding: 0 0 40px;
+}
+[data-page=vocabulary] .examples .container,
+[data-page=vocabulary] .examples-vocabulary .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  [data-page=vocabulary] .examples .container,
+  [data-page=vocabulary] .examples-vocabulary .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  [data-page=vocabulary] .examples .container img,
+  [data-page=vocabulary] .examples-vocabulary .container img {
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

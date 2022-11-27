@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -235,6 +236,76 @@ img {
   font-style: italic;
   font-display: swap;
 }
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url("../assets/fonts/helvetica/HelveticaNeueLTStd-Roman.woff2") format("woff2"), url("../assets/fonts/helvetica/HelveticaNeueLTStd-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url("../assets/fonts/helvetica/HelveticaNeueLTStd-Md.woff2") format("woff2"), url("../assets/fonts/helvetica/HelveticaNeueLTStd-Md.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url("../assets/fonts/helvetica/HelveticaNeueLTStd-Bd.woff2") format("woff2"), url("../assets/fonts/helvetica/HelveticaNeueLTStd-Bd.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url("../assets/fonts/helvetica/HelveticaNeueLTStd-Hv.woff2") format("woff2"), url("../assets/fonts/helvetica/HelveticaNeueLTStd-Hv.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url("../assets/fonts/helvetica/HelveticaNeueLTStd-Blk.woff2") format("woff2"), url("../assets/fonts/helvetica/HelveticaNeueLTStd-Blk.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue LT Std Extended";
+  src: url("../assets/fonts/helvetica/HelveticaNeueLTStd-Ex.woff2") format("woff2"), url("../assets/fonts/helvetica/HelveticaNeueLTStd-Ex.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue LT Std Extended";
+  src: url("../assets/fonts/helvetica/HelveticaNeueLTStd-MdEx.woff2") format("woff2"), url("../assets/fonts/helvetica/HelveticaNeueLTStd-MdEx.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue LT Std Extended";
+  src: url("../assets/fonts/helvetica/HelveticaNeueLTStd-BdEx.woff2") format("woff2"), url("../assets/fonts/helvetica/HelveticaNeueLTStd-BdEx.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue LT Std Extended";
+  src: url("../assets/fonts/helvetica/HelveticaNeueLTStd-HvEx.woff2") format("woff2"), url("../assets/fonts/helvetica/HelveticaNeueLTStd-HvEx.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue LT Std Extended";
+  src: url("../assets/fonts/helvetica/HelveticaNeueLTStd-BlkEx.woff2") format("woff2"), url("../assets/fonts/helvetica/HelveticaNeueLTStd-BlkEx.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 .main-navigation {
   top: 0;
   left: 0;
@@ -461,7 +532,7 @@ img {
   background-color: #d5e04e;
 }
 [data-page=home] .all-pages .full-pallete > div:nth-child(10) {
-  background-color: #54b948;
+  background-color: #67d369;
 }
 [data-page=home] .all-pages .all-fonts {
   display: flex;
@@ -680,6 +751,7 @@ img {
 
 [data-page=logo] .main {
   display: flex;
+  min-height: calc(100vh - 35px);
 }
 [data-page=logo] .main .container {
   display: flex;
@@ -1101,7 +1173,7 @@ img {
   background-color: #d5e04e;
 }
 [data-page=colors] .all-colors > div:nth-child(10) {
-  background-color: #54b948;
+  background-color: #67d369;
 }
 [data-page=colors] .all-colors .info {
   font-size: 18px;
@@ -1307,7 +1379,7 @@ img {
   background-color: #d5e04e;
 }
 [data-page=colors] .list-combinations .auxiliar-colors .green {
-  background-color: #54b948;
+  background-color: #67d369;
 }
 [data-page=colors] .list-selections {
   padding: 40px;
@@ -2214,6 +2286,356 @@ img {
 }
 [data-page=tone-voice] .concept > div p:not(:last-child) {
   margin-bottom: 20px;
+}
+
+[data-page=energy] .title,
+[data-page=energy] .subtitle {
+  line-height: 1.3;
+  color: #0054a4;
+  text-transform: uppercase;
+}
+[data-page=energy] .title {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Helvetica Neue LT Std Extended";
+}
+[data-page=energy] .subtitle {
+  padding: 20px 0;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Helvetica Neue LT Std";
+  border-top: #0054a4 thin solid;
+}
+[data-page=energy] .logo-main, [data-page=energy] .logo-preferential {
+  padding: 5vw 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+[data-page=energy] .logo-main img, [data-page=energy] .logo-preferential img {
+  max-width: 800px;
+}
+[data-page=energy] .logo-main {
+  border: #0054a4 thin solid;
+  margin-bottom: 60px;
+}
+[data-page=energy] .logo-main ~ p {
+  margin-bottom: 60px;
+}
+[data-page=energy] .logo-preferential {
+  background-color: #0054a4;
+  margin-bottom: 60px;
+}
+[data-page=energy] .logo-options img, [data-page=energy] .logo-products img, [data-page=energy] .logo-products-bg img, [data-page=energy] .logo-mono img {
+  max-width: 50%;
+}
+[data-page=energy] .logo-options > div, [data-page=energy] .logo-products > div, [data-page=energy] .logo-products-bg > div, [data-page=energy] .logo-mono > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+[data-page=energy] .logo-options > div:not(:last-child), [data-page=energy] .logo-products > div:not(:last-child), [data-page=energy] .logo-products-bg > div:not(:last-child), [data-page=energy] .logo-mono > div:not(:last-child) {
+  margin-bottom: 10px;
+}
+[data-page=energy] .logo-options > div:nth-child(2) {
+  border: #0054a4 thin solid;
+}
+[data-page=energy] .logo-options > div:nth-child(3) {
+  background-color: #0054a4;
+}
+[data-page=energy] .logo-options > div:nth-child(4) {
+  background-color: #67d369;
+}
+[data-page=energy] .logo-options > div:nth-child(5) {
+  background-color: #636466;
+}
+[data-page=energy] .logo-products > div {
+  padding: 40px 20px;
+  border: #0054a4 thin solid;
+}
+[data-page=energy] .logo-products-bg {
+  margin-bottom: 60px;
+}
+[data-page=energy] .logo-products-bg > div {
+  padding: 40px 20px;
+}
+[data-page=energy] .logo-products-bg > div:nth-child(1) {
+  background-color: #0054a4;
+}
+[data-page=energy] .logo-products-bg > div:nth-child(2) {
+  background-color: #636466;
+}
+[data-page=energy] .logo-products-bg > div:nth-child(3) {
+  background-color: #f68a33;
+}
+[data-page=energy] .logo-products-bg > div:nth-child(4) {
+  background-color: #ee3124;
+}
+[data-page=energy] .logo-mono {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+[data-page=energy] .logo-mono img {
+  max-width: 75%;
+}
+[data-page=energy] .logo-mono > div {
+  padding: 4vw;
+  margin: 10px;
+  width: calc(50% - 20px);
+}
+[data-page=energy] .logo-mono > div:nth-child(1) {
+  border: #0054a4 thin solid;
+}
+[data-page=energy] .logo-mono > div:nth-child(3), [data-page=energy] .logo-mono > div:nth-child(5) {
+  border: #000 thin solid;
+}
+[data-page=energy] .logo-mono > div:nth-child(2) {
+  background-color: #0054a4;
+}
+[data-page=energy] .logo-mono > div:nth-child(4), [data-page=energy] .logo-mono > div:nth-child(6) {
+  background-color: #000;
+}
+[data-page=energy] p {
+  color: #0054a4;
+  font-size: 20px;
+  line-height: 1.3;
+  font-family: "Neo Sans Pro";
+}
+[data-page=energy] .preferential {
+  display: flex;
+  border-top: #0054a4 thin solid;
+}
+[data-page=energy] .preferential span {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "Neo Sans Pro";
+  color: #0054a4;
+  display: inline-block;
+}
+[data-page=energy] .preferential > div {
+  padding: 30px 0;
+}
+[data-page=energy] .preferential > div:nth-child(1) {
+  width: 55%;
+  padding-right: 40px;
+  border-right: #0054a4 thin solid;
+}
+[data-page=energy] .preferential > div:nth-child(2) {
+  width: 45%;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+[data-page=energy] .preferential > div:nth-child(2) > div {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+[data-page=energy] .preferential > div:nth-child(2) > div img {
+  max-width: 90%;
+}
+[data-page=energy] .properties {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+[data-page=energy] .properties > div {
+  padding: 20px;
+  display: flex;
+}
+[data-page=energy] .properties > div:nth-child(odd) {
+  width: 45%;
+}
+[data-page=energy] .properties > div:nth-child(even) {
+  width: 55%;
+}
+[data-page=energy] .properties > div > div {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  padding-right: 20px;
+}
+[data-page=energy] .properties > div .color-details {
+  flex-direction: column;
+  padding-right: 0;
+}
+[data-page=energy] .properties > div .color-details > div {
+  width: 100%;
+}
+[data-page=energy] .properties > div .color-details .item {
+  display: flex;
+  align-items: center;
+}
+[data-page=energy] .properties > div .color-details .item:not(:last-child) {
+  margin-bottom: 10px;
+}
+[data-page=energy] .properties > div .color-details .item div, [data-page=energy] .properties > div .color-details .item p {
+  width: 50%;
+}
+[data-page=energy] .properties > div .color-details .item div {
+  height: 50px;
+  max-width: 180px;
+}
+[data-page=energy] .properties > div .color-details .item p {
+  font-size: 10px;
+  font-weight: 500;
+  display: inline-block;
+  padding-left: 10px;
+}
+[data-page=energy] .properties > div .color-details .item.dark-blue div {
+  background-color: #0054a4;
+}
+[data-page=energy] .properties > div .color-details .item.dark-blue p {
+  color: #0054a4;
+}
+[data-page=energy] .properties > div .color-details .item.green div {
+  background-color: #67d369;
+}
+[data-page=energy] .properties > div .color-details .item.green p {
+  color: #67d369;
+}
+[data-page=energy] .properties > div .color-details .item.light-blue div {
+  background-color: #00b5cc;
+}
+[data-page=energy] .properties > div .color-details .item.light-blue p {
+  color: #00b5cc;
+}
+[data-page=energy] .properties > div .color-details .item.red div {
+  background-color: #ee3124;
+}
+[data-page=energy] .properties > div .color-details .item.red p {
+  color: #ee3124;
+}
+[data-page=energy] .properties > div .color-details .item.energy-gray div {
+  background-color: #636466;
+}
+[data-page=energy] .properties > div .color-details .item.energy-gray p {
+  color: #636466;
+}
+[data-page=energy] .properties > div .color-details .item.orange div {
+  background-color: #f68a33;
+}
+[data-page=energy] .properties > div .color-details .item.orange p {
+  color: #f68a33;
+}
+[data-page=energy] .properties > div .color-details .item.light-orange div {
+  background-color: #ffc425;
+}
+[data-page=energy] .properties > div .color-details .item.light-orange p {
+  color: #ffc425;
+}
+[data-page=energy] .logo-protection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+[data-page=energy] .logo-protection img {
+  max-width: 80%;
+  margin: 80px 0;
+}
+[data-page=energy] .logo-protection p {
+  margin-bottom: 80px;
+  padding-right: 80px;
+}
+[data-page=energy] .reduction {
+  padding: 80px 0;
+}
+[data-page=energy] .reduction div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+[data-page=energy] .reduction div img {
+  max-width: 30%;
+}
+[data-page=energy] .reduction p {
+  max-width: 50%;
+}
+[data-page=energy] .incorrect {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 80´x;
+}
+[data-page=energy] .incorrect > div {
+  width: 33%;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+[data-page=energy] .incorrect span {
+  margin-top: 10px;
+  color: #0054a4;
+  font-family: "Neo Sans Pro";
+  font-size: 14px;
+}
+[data-page=energy] .incorrect ~ p {
+  margin-top: 20px;
+}
+[data-page=energy] .typography {
+  display: flex;
+}
+[data-page=energy] .typography > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+[data-page=energy] .typography > div span {
+  color: #0054a4;
+  font-size: 1.6vw;
+  line-height: 1.3;
+}
+[data-page=energy] .typography > div span:nth-child(1), [data-page=energy] .typography > div span:nth-child(2), [data-page=energy] .typography > div span:nth-child(3), [data-page=energy] .typography > div span:nth-child(4), [data-page=energy] .typography > div span:nth-child(5), [data-page=energy] .typography > div span:nth-child(6) {
+  font-family: "Helvetica Neue LT Std";
+}
+[data-page=energy] .typography > div span:nth-child(7), [data-page=energy] .typography > div span:nth-child(8), [data-page=energy] .typography > div span:nth-child(9), [data-page=energy] .typography > div span:nth-child(10), [data-page=energy] .typography > div span:nth-child(11) {
+  font-family: "Helvetica Neue LT Std Extended";
+}
+[data-page=energy] .typography > div span:nth-child(1) {
+  font-size: 4vw;
+  margin-bottom: 20px;
+}
+[data-page=energy] .typography > div span:nth-child(6) {
+  margin-bottom: 20px;
+}
+[data-page=energy] .typography > div span:nth-child(1) {
+  font-weight: 800;
+}
+[data-page=energy] .typography > div span:nth-child(2), [data-page=energy] .typography > div span:nth-child(7) {
+  font-weight: 400;
+}
+[data-page=energy] .typography > div span:nth-child(3), [data-page=energy] .typography > div span:nth-child(8) {
+  font-weight: 500;
+}
+[data-page=energy] .typography > div span:nth-child(4), [data-page=energy] .typography > div span:nth-child(9) {
+  font-weight: 700;
+}
+[data-page=energy] .typography > div span:nth-child(5), [data-page=energy] .typography > div span:nth-child(10) {
+  font-weight: 800;
+}
+[data-page=energy] .typography > div span:nth-child(6), [data-page=energy] .typography > div span:nth-child(11) {
+  font-weight: 900;
+}
+[data-page=energy] .typography > div:nth-child(2) {
+  text-align: right;
+}
+[data-page=energy] .typography > div:nth-child(2) span {
+  font-size: 7vw;
+  margin-bottom: 0 !important;
+  text-shadow: #d5e04e -0.5vw -0.5vw;
+}
+[data-page=energy] .typography ~ p {
+  font-size: 24px;
+}
+[data-page=energy] .typography ~ p strong {
+  font-weight: 700;
+  font-family: "Helvetica Neue LT Std";
 }
 
 [data-page=support] .main {

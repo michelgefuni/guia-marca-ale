@@ -1,6 +1,7 @@
 [data-page="logo"] {
   .main {
     display: flex;
+    min-height: calc(100vh - 35px);
 
     .container {
       display: flex;

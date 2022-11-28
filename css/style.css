@@ -3145,6 +3145,100 @@ img {
   max-width: 90%;
 }
 
+[data-page=services] .main {
+  width: 100%;
+  padding: 100px 0;
+  font-size: 80px;
+  font-family: "Neo Sans Pro";
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/images/bg-top-tone.jpg);
+  min-height: unset;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 1210px) {
+  [data-page=services] .main {
+    font-size: 60px;
+  }
+}
+@media (max-width: 940px) {
+  [data-page=services] .main {
+    min-height: 50vh;
+    align-items: center;
+    display: flex;
+  }
+}
+@media (max-width: 640px) {
+  [data-page=services] .main {
+    font-size: 40px;
+  }
+}
+[data-page=services] .main::before {
+  content: "";
+  width: 400px;
+  height: 400px;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  pointer-events: none;
+  border-radius: 0 300px 0 0;
+  box-shadow: #ffffff 80px -40px 0 40px;
+  z-index: 0;
+  transform: rotate(90deg);
+}
+[data-page=services] p, [data-page=services] h2 {
+  color: #0054a4;
+  font-family: "Neo Sans Pro";
+  line-height: 1.3;
+}
+[data-page=services] p {
+  font-size: 40px;
+  padding: 80px 0;
+}
+[data-page=services] h2 {
+  font-size: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: #0054a4 2px solid;
+  position: relative;
+}
+[data-page=services] h2::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  bottom: -2px;
+  left: 300px;
+  position: absolute;
+  z-index: 1;
+}
+[data-page=services] h2 + div {
+  padding: 60px 0;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 640px) {
+  [data-page=services] h2 + div {
+    flex-direction: column;
+  }
+}
+[data-page=services] h2 + div img {
+  max-width: 48%;
+}
+@media (max-width: 640px) {
+  [data-page=services] h2 + div img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
 [data-page=support] .main {
   display: flex;
   background-color: #ffffff;

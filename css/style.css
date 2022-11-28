@@ -1065,7 +1065,7 @@ img {
     min-height: 250px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 420px) {
   [data-page=logo] .not-todo .list > div {
     width: 100%;
     min-height: 250px;
@@ -2789,6 +2789,360 @@ img {
 [data-page=energy] .typography ~ p strong {
   font-weight: 700;
   font-family: "Helvetica Neue LT Std";
+}
+
+[data-page=clube] .main {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 0;
+}
+[data-page=clube] .main::before, [data-page=clube] .main::after {
+  content: "";
+  height: 30px;
+  bottom: 0;
+  position: absolute;
+}
+[data-page=clube] .main::before {
+  left: 0;
+  width: 65%;
+  background-color: #0054a4;
+}
+[data-page=clube] .main::after {
+  right: 0;
+  width: 35%;
+  background-color: #ee3124;
+}
+[data-page=clube] .main img {
+  max-width: 50vw;
+  max-height: 50vh;
+}
+[data-page=clube] .content {
+  padding: 0;
+}
+[data-page=clube] .logo-options, [data-page=clube] .logo-options-mono {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 680px) {
+  [data-page=clube] .logo-options, [data-page=clube] .logo-options-mono {
+    flex-direction: column;
+  }
+}
+[data-page=clube] .logo-options > div, [data-page=clube] .logo-options-mono > div {
+  display: flex;
+}
+[data-page=clube] .logo-options > div:nth-child(1), [data-page=clube] .logo-options-mono > div:nth-child(1) {
+  width: 35%;
+  padding: 20px;
+}
+@media (max-width: 680px) {
+  [data-page=clube] .logo-options > div:nth-child(1), [data-page=clube] .logo-options-mono > div:nth-child(1) {
+    width: 100%;
+  }
+}
+[data-page=clube] .logo-options > div:nth-child(1) div, [data-page=clube] .logo-options-mono > div:nth-child(1) div {
+  display: flex;
+  flex-direction: column;
+}
+[data-page=clube] .logo-options > div:nth-child(2), [data-page=clube] .logo-options-mono > div:nth-child(2) {
+  width: 65%;
+}
+[data-page=clube] .logo-options > div:nth-child(2) img, [data-page=clube] .logo-options-mono > div:nth-child(2) img {
+  max-height: 175px;
+}
+[data-page=clube] .logo-options {
+  min-height: calc(100vh - 35px);
+}
+[data-page=clube] .logo-options > div {
+  min-height: inherit;
+  flex-direction: column;
+}
+[data-page=clube] .logo-options > div:nth-child(1) {
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+[data-page=clube] .logo-options > div:nth-child(1) img {
+  max-height: 240px;
+}
+[data-page=clube] .logo-options > div:nth-child(1) span {
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "Neo Sans Pro";
+  line-height: 1.3;
+  color: #ffffff;
+  padding: 10px;
+  padding-left: 110px;
+}
+[data-page=clube] .logo-options > div:nth-child(1) span:nth-child(1) {
+  background-color: #ee3124;
+}
+[data-page=clube] .logo-options > div:nth-child(1) span:nth-child(2) {
+  margin-top: 10px;
+  background-color: #007dc3;
+}
+@media (max-width: 680px) {
+  [data-page=clube] .logo-options > div:nth-child(2) {
+    flex-grow: unset;
+    width: 100%;
+  }
+}
+[data-page=clube] .logo-options > div:nth-child(2) div {
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+[data-page=clube] .logo-options > div:nth-child(2) div:nth-child(1) {
+  background-color: #ffffff;
+}
+@media (max-width: 680px) {
+  [data-page=clube] .logo-options > div:nth-child(2) div:nth-child(1) {
+    padding-top: 50px;
+  }
+}
+[data-page=clube] .logo-options > div:nth-child(2) div:nth-child(2) {
+  background-color: #ffc425;
+}
+[data-page=clube] .logo-options > div:nth-child(2) div:nth-child(3) {
+  background-color: #0054a4;
+}
+[data-page=clube] .logo-options > div:nth-child(2) span {
+  top: 30px;
+  left: 30px;
+  position: absolute;
+  color: #0054a4;
+  font-family: "Neo Sans Pro";
+  font-size: 20px;
+}
+[data-page=clube] .logo-options-mono > div:nth-child(1) {
+  color: #0054a4;
+  font-family: "Neo Sans Pro";
+  line-height: 1.3;
+  font-size: 20px;
+}
+[data-page=clube] .logo-options-mono > div:nth-child(2) {
+  display: flex;
+}
+@media (max-width: 680px) {
+  [data-page=clube] .logo-options-mono > div:nth-child(2) {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+[data-page=clube] .logo-options-mono > div:nth-child(2) > div {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+@media (max-width: 680px) {
+  [data-page=clube] .logo-options-mono > div:nth-child(2) > div {
+    width: 100%;
+  }
+}
+[data-page=clube] .logo-options-mono > div:nth-child(2) > div > div {
+  padding: 20px;
+}
+[data-page=clube] .logo-options-mono > div:nth-child(2) > div:nth-child(1) > div:nth-child(1), [data-page=clube] .logo-options-mono > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+  width: 50%;
+}
+@media (max-width: 680px) {
+  [data-page=clube] .logo-options-mono > div:nth-child(2) > div:nth-child(1) > div:nth-child(1), [data-page=clube] .logo-options-mono > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+    width: 100%;
+  }
+}
+[data-page=clube] .logo-options-mono > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+  background-color: #ee3124;
+}
+[data-page=clube] .logo-options-mono > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+  background-color: #0054a4;
+}
+[data-page=clube] .logo-options-mono > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) {
+  width: 100%;
+  background-color: #211f20;
+}
+[data-page=clube] .logo-options-mono > div:nth-child(2) > div:nth-child(2) > div {
+  width: 50%;
+}
+@media (max-width: 680px) {
+  [data-page=clube] .logo-options-mono > div:nth-child(2) > div:nth-child(2) > div {
+    width: 100%;
+  }
+}
+[data-page=clube] .logo-options-mono > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  background-color: #211f20;
+}
+[data-page=clube] .tips-margin {
+  display: flex;
+  padding: 40px 20px;
+  margin-top: 40px;
+  min-height: 100vh;
+  position: relative;
+}
+@media (max-width: 680px) {
+  [data-page=clube] .tips-margin {
+    min-height: unset;
+  }
+}
+[data-page=clube] .tips-margin::before, [data-page=clube] .tips-margin::after {
+  content: "";
+  height: 30px;
+  bottom: 0;
+  position: absolute;
+}
+[data-page=clube] .tips-margin::before {
+  left: 0;
+  width: 65%;
+  background-color: #0054a4;
+}
+[data-page=clube] .tips-margin::after {
+  right: 0;
+  width: 35%;
+  background-color: #ee3124;
+}
+@media (max-width: 780px) {
+  [data-page=clube] .tips-margin {
+    flex-direction: column;
+  }
+}
+[data-page=clube] .tips-margin > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 780px) {
+  [data-page=clube] .tips-margin > div {
+    width: 100%;
+  }
+}
+[data-page=clube] .tips-margin > div:nth-child(1) img {
+  max-width: 50%;
+  margin: auto;
+}
+[data-page=clube] .tips-margin > div:nth-child(2) img {
+  margin-left: 5%;
+}
+@media (max-width: 780px) {
+  [data-page=clube] .tips-margin > div:nth-child(2) img {
+    margin-left: 0;
+  }
+}
+[data-page=clube] .tips-margin span {
+  display: block;
+  color: #0054a4;
+  font-size: 20px;
+  font-family: "Neo Sans Pro";
+  line-height: 1.3;
+  max-width: 230px;
+}
+@media (max-width: 780px) {
+  [data-page=clube] .tips-margin span {
+    max-width: 100%;
+    margin: 40px 0;
+  }
+}
+[data-page=clube] .tips-margin img {
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 95%;
+}
+@media (max-width: 780px) {
+  [data-page=clube] .tips-margin img {
+    max-width: 100%;
+  }
+}
+[data-page=clube] .other-brands {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+[data-page=clube] .other-brands strong {
+  font-family: "Neo Sans Pro";
+  color: #0054a4;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+[data-page=clube] .other-brands > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 800px) {
+  [data-page=clube] .other-brands > div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+[data-page=clube] .other-brands > div img {
+  max-height: 130px;
+}
+@media (max-width: 800px) {
+  [data-page=clube] .other-brands > div img {
+    max-height: 100px;
+  }
+  [data-page=clube] .other-brands > div img:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+[data-page=clube] .not-todo {
+  padding: 40px 0;
+}
+[data-page=clube] .not-todo p {
+  font-size: 30px;
+  color: #0054a4;
+  font-family: "Neo Sans Pro";
+}
+[data-page=clube] .not-todo p i {
+  text-decoration: underline;
+}
+[data-page=clube] .not-todo p.title {
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+[data-page=clube] .not-todo p.title i {
+  text-decoration: underline;
+}
+[data-page=clube] .not-todo .list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+[data-page=clube] .not-todo .list > div {
+  width: 25%;
+  min-height: 150px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  [data-page=clube] .not-todo .list > div {
+    width: 50%;
+    min-height: 250px;
+  }
+}
+@media (max-width: 420px) {
+  [data-page=clube] .not-todo .list > div {
+    width: 100%;
+    min-height: 250px;
+  }
+}
+[data-page=clube] .not-todo .list span {
+  font-size: 18px;
+  color: #0054a4;
+  font-family: "Neo Sans Pro";
+}
+[data-page=clube] .not-todo .list img {
+  max-width: 90%;
 }
 
 [data-page=support] .main {

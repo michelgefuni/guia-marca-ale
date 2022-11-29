@@ -387,9 +387,7 @@
           border-bottom-right-radius: 150px;
         }
 
-        .container {
-          text-align: center;
-        }
+        .container { text-align: center; }
       }
 
       h2 {
@@ -421,10 +419,6 @@
         font-size: 30px;
         font-family: $font_neo;
         color: $primary_white;
-      }
-
-      img {
-        max-width: 100%;
       }
     }
   }

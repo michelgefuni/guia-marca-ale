@@ -18,15 +18,18 @@ sass --watch scss/main.scss css/style.css
 │       ├── _colors.scss
 │       ├── _default.scss
 │       ├── _fonts.scss
+│       ├── ...
 │   ├── layout
 │       ├── _Header_.scss
-│       ├── _Hero.scss
+│       ├── ...
 ├── js
 │   ├── main.js
 ├── assets
 │   ├── icons
 │   ├── images
 ├── pages
+│   ├── index.html
+│   ├── ...
 ```
 
 ### Mais informações

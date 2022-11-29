@@ -7,7 +7,7 @@
   display: flex;
   justify-content: flex-end;
 
-  nav {
+  > nav {
     background-color: $primary_dark_blue;
     padding: 20px 60px 26px 70px;
     border-bottom-left-radius: 60px;
@@ -16,28 +16,75 @@
       padding: 10px 30px 13px 35px;
       border-bottom-left-radius: 30px;
     }
-  }
-
-  a {
-    display: inline-block;
-    text-decoration: none;
-    &:last-of-type {
-      margin-left: 24px;
-
+  
+    a {
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+      
+      &:last-of-type {
+        margin-left: 24px;
+  
+        @media (max-width: 600px) {
+          margin-left: 12px;
+        }
+      }
+    }
+    
+    svg {
+      width: 50px;
+      height: 50px;
+      fill: $primary_white;
+  
       @media (max-width: 600px) {
-        margin-left: 12px;
+        width: 25px;
+        height: 25px;
       }
     }
   }
-  
-  svg {
-    width: 50px;
-    height: 50px;
-    fill: $primary_white;
+}
 
-    @media (max-width: 600px) {
-      width: 25px;
-      height: 25px;
+.menu {
+  height: 100vh;
+  width: 300px;
+  top: 0;
+  right: -300px;
+  bottom: 0;
+  position: fixed;
+  background-color: $primary_dark_blue;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  transition: all ease-in-out .3s;
+
+  &.open { right: 0; }
+
+  button {
+    background: none;
+    border: none;
+    margin: 20px 0 40px;
+    cursor: pointer;
+
+    svg { fill: $primary_white; }
+  }
+
+  > nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      width: 100%;
+      padding: 10px 20px;
+      color: $primary_white;
+      font-size: 20px;
+      font-family: $font-neo;
+      text-decoration: none;
+      transition: all ease-in-out .3s;
+
+      &:hover { background-color: rgba(255,255,255,.2); }
     }
   }
 }

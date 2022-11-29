@@ -315,39 +315,85 @@ img {
   display: flex;
   justify-content: flex-end;
 }
-.main-navigation nav {
+.main-navigation > nav {
   background-color: #0054a4;
   padding: 20px 60px 26px 70px;
   border-bottom-left-radius: 60px;
 }
 @media (max-width: 600px) {
-  .main-navigation nav {
+  .main-navigation > nav {
     padding: 10px 30px 13px 35px;
     border-bottom-left-radius: 30px;
   }
 }
-.main-navigation a {
+.main-navigation > nav a {
   display: inline-block;
   text-decoration: none;
+  cursor: pointer;
 }
-.main-navigation a:last-of-type {
+.main-navigation > nav a:last-of-type {
   margin-left: 24px;
 }
 @media (max-width: 600px) {
-  .main-navigation a:last-of-type {
+  .main-navigation > nav a:last-of-type {
     margin-left: 12px;
   }
 }
-.main-navigation svg {
+.main-navigation > nav svg {
   width: 50px;
   height: 50px;
   fill: #ffffff;
 }
 @media (max-width: 600px) {
-  .main-navigation svg {
+  .main-navigation > nav svg {
     width: 25px;
     height: 25px;
   }
+}
+
+.menu {
+  height: 100vh;
+  width: 300px;
+  top: 0;
+  right: -300px;
+  bottom: 0;
+  position: fixed;
+  background-color: #0054a4;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  transition: all ease-in-out 0.3s;
+}
+.menu.open {
+  right: 0;
+}
+.menu button {
+  background: none;
+  border: none;
+  margin: 20px 0 40px;
+  cursor: pointer;
+}
+.menu button svg {
+  fill: #ffffff;
+}
+.menu > nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu > nav a {
+  width: 100%;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Neo Sans Pro";
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+.menu > nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 [data-page=home] .main {

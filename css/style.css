@@ -317,14 +317,8 @@ img {
 }
 .main-navigation > nav {
   background-color: #0054a4;
-  padding: 20px 60px 26px 70px;
-  border-bottom-left-radius: 60px;
-}
-@media (max-width: 600px) {
-  .main-navigation > nav {
-    padding: 10px 30px 13px 35px;
-    border-bottom-left-radius: 30px;
-  }
+  padding: 10px 30px 13px 35px;
+  border-bottom-left-radius: 30px;
 }
 .main-navigation > nav a {
   display: inline-block;
@@ -332,16 +326,11 @@ img {
   cursor: pointer;
 }
 .main-navigation > nav a:last-of-type {
-  margin-left: 24px;
-}
-@media (max-width: 600px) {
-  .main-navigation > nav a:last-of-type {
-    margin-left: 12px;
-  }
+  margin-left: 12px;
 }
 .main-navigation > nav svg {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   fill: #ffffff;
 }
 @media (max-width: 600px) {

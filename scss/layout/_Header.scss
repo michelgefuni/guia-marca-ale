@@ -9,31 +9,20 @@
 
   > nav {
     background-color: $primary_dark_blue;
-    padding: 20px 60px 26px 70px;
-    border-bottom-left-radius: 60px;
-
-    @media (max-width: 600px) {
-      padding: 10px 30px 13px 35px;
-      border-bottom-left-radius: 30px;
-    }
+    padding: 10px 30px 13px 35px;
+    border-bottom-left-radius: 30px;
   
     a {
       display: inline-block;
       text-decoration: none;
       cursor: pointer;
       
-      &:last-of-type {
-        margin-left: 24px;
-  
-        @media (max-width: 600px) {
-          margin-left: 12px;
-        }
-      }
+      &:last-of-type { margin-left: 12px; }
     }
     
     svg {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       fill: $primary_white;
   
       @media (max-width: 600px) {
